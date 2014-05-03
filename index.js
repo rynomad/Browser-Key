@@ -2,7 +2,7 @@ require('./forge.min.js');
 var keygen = {};
 var pki = forge.pki;
 
-keygen.init = function(prefix, password, callback){
+keygen.init = function(prefix, callback, password){
   if (localStorage[prefix + '-certificate'] == undefined) {
     var self = this;
     console.log('generating keypair', forge)
@@ -33,5 +33,5 @@ keygen.init = function(prefix, password, callback){
   }
 }
 
-module.exports = keygen;
+module.exports = keygen.init;
 
