@@ -1,0 +1,27 @@
+{
+  "name": "Browser-Key",
+  "version": "0.0.0",
+  "description": "simple localstorage encrypted PKI storage, using forge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rynomad/Browser-Key.git"
+  },
+  "dependencies": {
+    "workerify": "~0.2.0",
+    "browserify": "*"
+  },
+  "browserify": {
+    "transform": "workerify"
+  },
+  "author": "",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/rynomad/Browser-Key/issues"
+  },
+  "homepage": "https://github.com/rynomad/Browser-Key"
+
+}
